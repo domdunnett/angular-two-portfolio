@@ -34,4 +34,10 @@ import { TravelComponent } from './travel/travel.component';
 
 export class AppComponent {
   title = 'Dom Dunnett'
+  logo = 'Logo.svg'
+
+  onResize(event : any) {
+    if (event.target.innerWidth < 1000)
+      this.logo = 'smallLogo.svg'
+  }
 }

@@ -1,4 +1,4 @@
-<img class="logo" src="Logo.svg" alt="dom dunnett">
+<img class="logo" (window:resize)="onResize($event)" src="{{ logo }}" alt="dom dunnett">
 <nav>
   <a [routerLink]="['About']">About</a>
   <a [routerLink]="['Tech']">Tech</a>
