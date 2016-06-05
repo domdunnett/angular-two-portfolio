@@ -1,9 +1,4 @@
 /* Master Styles */
-h2 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
 body {
   margin: 2em;
   background: url(Border.svg) repeat;
@@ -33,6 +28,10 @@ button:disabled {
 .logo {
   margin-top: 0.7em;
   margin-left: 5em;
+}
+about > div, tech > div, travel > div, contact > div {
+    margin-left: 5em;
+    margin-top: 2em;
 }
 /* everywhere else */
 * {

@@ -1,10 +1,8 @@
 <img class="logo" (window:resize)="onResize($event)" [src]="logo" alt="dom dunnett">
-<span *ngIf="logo == 'Logo.svg'">full stack developer</span><span> @ </span>
-<img class="skyscannerLogo" (window:resize)="onResize($event)" src="skyscannerLogo.svg" alt="Skyscanner">
 <nav>
   <a [routerLink]="['About']">About</a>
   <a [routerLink]="['Tech']">Tech</a>
   <a [routerLink]="['Travel']">Travel</a>
-  <!-- <a [routerLink]="['Heroes']">Contact</a> -->
+  <a [routerLink]="['Contact']">Contact</a>
 </nav>
 <router-outlet></router-outlet>

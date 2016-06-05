@@ -10,24 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
-var icon_1 = require('@angular2-material/icon');
-var AboutComponent = (function () {
-    function AboutComponent(router) {
+var ContactComponent = (function () {
+    function ContactComponent(router) {
         this.router = router;
     }
     ;
-    AboutComponent.prototype.ngOnInit = function () { };
-    AboutComponent = __decorate([
+    ContactComponent = __decorate([
         core_1.Component({
-            selector: 'about',
-            templateUrl: 'app/about/about.component.html',
-            styleUrls: ['app/about/about.component.css'],
-            directives: [icon_1.MdIcon],
-            providers: [icon_1.MdIconRegistry]
+            selector: 'contact',
+            templateUrl: 'app/contact/contact.component.html',
+            styleUrls: ['app/contact/contact.component.css']
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router])
-    ], AboutComponent);
-    return AboutComponent;
+    ], ContactComponent);
+    return ContactComponent;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.ContactComponent = ContactComponent;
+//# sourceMappingURL=contact.component.js.map

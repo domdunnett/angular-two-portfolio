@@ -4,6 +4,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 import { TechComponent } from './tech/tech.component';
 import { AboutComponent } from './about/about.component';
 import { TravelComponent } from './travel/travel.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'portfolio',
@@ -29,6 +30,11 @@ import { TravelComponent } from './travel/travel.component';
     path: '/travel',
     name: 'Travel',
     component: TravelComponent
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: ContactComponent
   }
 ])
 

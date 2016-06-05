@@ -13,10 +13,18 @@ var router_deprecated_1 = require('@angular/router-deprecated');
 var tech_component_1 = require('./tech/tech.component');
 var about_component_1 = require('./about/about.component');
 var travel_component_1 = require('./travel/travel.component');
+var contact_component_1 = require('./contact/contact.component');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Dom Dunnett';
+        this.logo = 'Logo.svg';
     }
+    AppComponent.prototype.onResize = function (event) {
+        if (event.target.innerWidth < 1000)
+            this.logo = 'smallLogo.svg';
+        else
+            this.logo = 'Logo.svg';
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'portfolio',
@@ -41,6 +49,11 @@ var AppComponent = (function () {
                 path: '/travel',
                 name: 'Travel',
                 component: travel_component_1.TravelComponent
+            },
+            {
+                path: '/contact',
+                name: 'Contact',
+                component: contact_component_1.ContactComponent
             }
         ]), 
         __metadata('design:paramtypes', [])
