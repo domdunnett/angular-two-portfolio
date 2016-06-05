@@ -39,5 +39,7 @@ export class AppComponent {
   onResize(event : any) {
     if (event.target.innerWidth < 1000)
       this.logo = 'smallLogo.svg'
+    else
+      this.logo = 'Logo.svg'
   }
 }
