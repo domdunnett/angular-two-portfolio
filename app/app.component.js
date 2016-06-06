@@ -19,8 +19,14 @@ var AppComponent = (function () {
         this.title = 'Dom Dunnett';
         this.logo = 'Logo.svg';
     }
+    AppComponent.prototype.ngOnInit = function () {
+        if (window.innerWidth < 500)
+            this.logo = 'smallLogo.svg';
+        else
+            this.logo = 'Logo.svg';
+    };
     AppComponent.prototype.onResize = function (event) {
-        if (event.target.innerWidth < 1000)
+        if (event.target.innerWidth < 500)
             this.logo = 'smallLogo.svg';
         else
             this.logo = 'Logo.svg';

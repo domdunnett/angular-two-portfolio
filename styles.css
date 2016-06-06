@@ -37,3 +37,20 @@ about > div, tech > div, travel > div, contact > div {
 * {
   font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+  about > div, tech > div, travel > div, contact > div {
+    margin-left: 6.5em;
+    margin-top: 2em;
+  }
+  .logo {
+    margin-top: 1.5em;
+    margin-left: 6.5em;
+  }
+  nav {
+    margin-top: 5.5em;
+    margin-left: 6.5em;
+  }
+}

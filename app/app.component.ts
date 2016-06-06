@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
 import { TechComponent } from './tech/tech.component';
@@ -38,12 +38,19 @@ import { ContactComponent } from './contact/contact.component';
   }
 ])
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Dom Dunnett'
   logo = 'Logo.svg'
 
+  ngOnInit() {
+    if (window.innerWidth < 500)
+      this.logo = 'smallLogo.svg'
+    else
+      this.logo = 'Logo.svg'
+  }
+
   onResize(event : any) {
-    if (event.target.innerWidth < 1000)
+    if (event.target.innerWidth < 500)
       this.logo = 'smallLogo.svg'
     else
       this.logo = 'Logo.svg'
