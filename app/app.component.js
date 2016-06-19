@@ -12,7 +12,6 @@ var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var tech_component_1 = require('./tech/tech.component');
 var about_component_1 = require('./about/about.component');
-var travel_component_1 = require('./travel/travel.component');
 var contact_component_1 = require('./contact/contact.component');
 var AppComponent = (function () {
     function AppComponent() {
@@ -50,11 +49,6 @@ var AppComponent = (function () {
                 path: '/tech',
                 name: 'Tech',
                 component: tech_component_1.TechComponent
-            },
-            {
-                path: '/travel',
-                name: 'Travel',
-                component: travel_component_1.TravelComponent
             },
             {
                 path: '/contact',

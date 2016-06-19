@@ -5,8 +5,8 @@ body {
   background-size: auto auto;
 }
 nav {
-  margin-top: 4.5em;
-  margin-left: 5em;
+  margin-top: 5.5em;
+  margin-left: 6em;
 }
 button {
   font-family: Arial;
@@ -26,16 +26,17 @@ button:disabled {
   cursor: auto;
 }
 .logo {
-  margin-top: 0.7em;
-  margin-left: 5em;
+  margin-top: 1em;
+  margin-left: 6em;
 }
 about > div, tech > div, travel > div, contact > div {
-    margin-left: 5em;
-    margin-top: 2em;
+    margin-left: 6em;
+    margin-top: 3em;
 }
 /* everywhere else */
 * {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 @media (max-width: 500px) {
   * {

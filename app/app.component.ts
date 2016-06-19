@@ -3,7 +3,6 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 
 import { TechComponent } from './tech/tech.component';
 import { AboutComponent } from './about/about.component';
-import { TravelComponent } from './travel/travel.component';
 import { ContactComponent } from './contact/contact.component';
 
 @Component({
@@ -25,11 +24,6 @@ import { ContactComponent } from './contact/contact.component';
     path: '/tech',
     name: 'Tech',
     component: TechComponent
-  },
-  {
-    path: '/travel',
-    name: 'Travel',
-    component: TravelComponent
   },
   {
     path: '/contact',
