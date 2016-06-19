@@ -25,9 +25,11 @@ button:disabled {
   color: #aaa;
   cursor: auto;
 }
+portfolio {
+  margin-left: 6em;
+}
 .logo {
   margin-top: 1em;
-  margin-left: 6em;
 }
 about > div, tech > div, travel > div, contact > div {
     margin-left: 6em;
@@ -46,9 +48,11 @@ about > div, tech > div, travel > div, contact > div {
     margin-left: 6.5em;
     margin-top: 2em;
   }
+  portfolio {
+    margin-left: 6.5em;
+  }
   .logo {
     margin-top: 1.5em;
-    margin-left: 6.5em;
   }
   nav {
     margin-top: 5.5em;
